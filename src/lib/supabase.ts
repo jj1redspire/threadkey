@@ -25,6 +25,6 @@ export function getSupabaseAdmin(): SupabaseClient {
 // This is kept for backward compatibility if needed
 export function getSupabaseClient(): SupabaseClient {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+  const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!;
   return createClient(url, key);
 }
