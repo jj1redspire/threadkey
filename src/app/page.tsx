@@ -563,10 +563,14 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-          <div className="border-t border-slate-700 mt-10 pt-6 text-center">
+          <div className="border-t border-slate-700 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-xs text-slate-500">
               © {new Date().getFullYear()} ThreadKey. Built for the authors who keep writing.
             </p>
+            <div className="flex gap-4">
+              <Link href="/terms" className="text-xs text-slate-500 hover:text-white transition-colors">Terms of Service</Link>
+              <Link href="/privacy" className="text-xs text-slate-500 hover:text-white transition-colors">Privacy Policy</Link>
+            </div>
           </div>
         </div>
       </footer>
